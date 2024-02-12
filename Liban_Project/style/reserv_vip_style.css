@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a52c99;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .home-button {
+    display: inline-block;
+    background-color: #3f0b6d;
+    color: #e0d8d8;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Espace entre le bouton et le titre */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .vip-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .vip-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .vip-option {
+    background-color: #e7374b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(186, 175, 175, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .vip-option h2 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .vip-option p {
+    line-height: 1.6;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #010406;
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .vip-options {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .vip-option {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  
